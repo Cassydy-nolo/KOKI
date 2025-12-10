@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>KOKI Hair & Nails</title>
+  <style>
+    body {
+      background:#fff;
+      color:#000;
+      font-family:Arial, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      margin:0;
+    }
+    h1 {
+      font-size:3em;
+      color:#ff1493;
+      opacity:0;
+      animation: fadeInOut 3s forwards;
+    }
+    @keyframes fadeInOut {
+      0% { opacity:0; transform:scale(0.8); }
+      30% { opacity:1; transform:scale(1.1); }
+      70% { opacity:1; transform:scale(1); }
+      100% { opacity:0; transform:scale(0.9); }
+    }
+  </style>
+  <script>
+    // Redirect after animation
+    setTimeout(function(){
+      window.location.href = "catalog-view.xhtml"; // change target page here
+    }, 3000); // 3 seconds
+  </script>
+</head>
+<body>
+  <h1>KOKI Hair & Nails</h1>
+</body>
+</html>
