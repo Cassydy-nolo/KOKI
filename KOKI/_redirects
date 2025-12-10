@@ -1,0 +1,11 @@
+/catalog       /catalog-view.xhtml     200
+/cart          /cart.xhtml             200
+/services      /services.xhtml         200
+/products      /products.xhtml         200
+/admins        /admins.xhtml           200
+/employees     /employees.xhtml        200
+/clients       /clients.xhtml          200
+/logo          /logo.xhtml             200
+/gallery       /gallery.xhtml          200
+/              /index.html             200
+/*             /index.html             200
