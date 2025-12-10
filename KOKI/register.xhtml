@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Register - KOKI Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial; }
+    h1 { color:#ff1493; }
+    input, button { margin:5px; padding:10px; }
+    button { background:#ff1493; color:#fff; border:none; cursor:pointer; }
+    button:hover { background:#ffc0cb; }
+  </style>
+</head>
+<body>
+  <h1>Create Your Account</h1>
+  <form onsubmit="registerCustomer(email.value, password.value); return false;">
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Register as Customer</button>
+  </form>
+  <hr />
+  <form onsubmit="registerStaff(staffEmail.value, staffPassword.value, staffRole.value); return false;">
+    <input type="email" id="staffEmail" placeholder="Staff Email" required />
+    <input type="password" id="staffPassword" placeholder="Password" required />
+    <select id="staffRole">
+      <option value="employee">Employee</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button type="submit">Register as Staff</button>
+  </form>
+  <script type="module" src="../scripts/auth.js"></script>
+</body>
+</html>

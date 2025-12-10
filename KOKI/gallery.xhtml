@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Intro Gallery - KOKI Hair & Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial, sans-serif; }
+    h1 { color:#ff1493; text-align:center; }
+    .container { width:80%; margin:20px auto; text-align:center; }
+    input, button { margin:10px; padding:10px; }
+    button { background:#ff1493; color:#fff; border:none; cursor:pointer; border-radius:5px; }
+    button:hover { background:#ffc0cb; color:#000; }
+    .gallery { display:flex; flex-wrap:wrap; justify-content:center; margin-top:20px; }
+    .gallery img { max-width:200px; margin:10px; border:1px solid #000; border-radius:5px; }
+    .delete { background:#dc143c; color:#fff; margin-top:5px; }
+    .delete:hover { background:#ff7f7f; color:#000; }
+  </style>
+</head>
+<body>
+  <h1>Intro Gallery Management</h1>
+  <div class="container">
+    <form onsubmit="uploadImage(fileInput.files[0]); return false;">
+      <input type="file" id="fileInput" accept="image/*" required />
+      <button type="submit">Upload Image</button>
+    </form>
+    <div class="gallery" id="gallery-list"></div>
+  </div>
+  <script type="module" src="../scripts/gallery.js"></script>
+</body>
+</html>

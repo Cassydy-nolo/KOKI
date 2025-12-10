@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Super Admin Dashboard - KOKI Hair & Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial, sans-serif; }
+    h1 { color:#ff1493; text-align:center; }
+    .dashboard {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-top:20px;
+    }
+    .card {
+      border:1px solid #000;
+      background:#fff5ee;
+      padding:20px;
+      margin:10px;
+      width:200px;
+      text-align:center;
+      border-radius:8px;
+    }
+    .card button {
+      background:#ff1493;
+      color:#fff;
+      border:none;
+      padding:10px 15px;
+      margin-top:10px;
+      cursor:pointer;
+      border-radius:5px;
+      width:100%;
+    }
+    .card button:hover {
+      background:#ffc0cb;
+      color:#000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Super Admin Dashboard</h1>
+  <div class="dashboard">
+    <div class="card">
+      <p>Manage Admins</p>
+      <button onclick="location.href='admins.xhtml'">Admins</button>
+    </div>
+    <div class="card">
+      <p>Approve Staff</p>
+      <button onclick="location.href='approvals.xhtml'">Approvals</button>
+    </div>
+    <div class="card">
+      <p>Manage Employees</p>
+      <button onclick="location.href='employees.xhtml'">Employees</button>
+    </div>
+    <div class="card">
+      <p>Manage Clients</p>
+      <button onclick="location.href='clients.xhtml'">Clients</button>
+    </div>
+    <div class="card">
+      <p>Products</p>
+      <button onclick="location.href='products.xhtml'">Products</button>
+    </div>
+    <div class="card">
+      <p>Services</p>
+      <button onclick="location.href='services.xhtml'">Services</button>
+    </div>
+    <div class="card">
+      <p>Logo Management</p>
+      <button onclick="location.href='logo.xhtml'">Logo</button>
+    </div>
+    <div class="card">
+      <p>Intro Gallery</p>
+      <button onclick="location.href='gallery.xhtml'">Intro Gallery</button>
+    </div>
+    <div class="card">
+      <p>Catalog</p>
+      <button onclick="location.href='catalog.xhtml'">Catalog</button>
+    </div>
+  </div>
+</body>
+</html>

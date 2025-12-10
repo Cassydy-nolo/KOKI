@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Login - KOKI Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial; }
+    h1 { color:#ff1493; }
+    input, button { margin:5px; padding:10px; }
+    button { background:#ff1493; color:#fff; border:none; cursor:pointer; }
+    button:hover { background:#ffc0cb; }
+  </style>
+</head>
+<body>
+  <h1>Login</h1>
+  <form onsubmit="loginWithEmail(email.value, password.value); return false;">
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+  </form>
+  <script type="module" src="../scripts/auth.js"></script>
+</body>
+</html>

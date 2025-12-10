@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Catalog - KOKI Hair & Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial, sans-serif; }
+    h1 { color:#ff1493; text-align:center; }
+    form { width:60%; margin:20px auto; display:flex; flex-direction:column; }
+    input, select, button { margin:5px 0; padding:10px; }
+    button { background:#ff1493; color:#fff; border:none; cursor:pointer; border-radius:5px; }
+    button:hover { background:#ffc0cb; color:#000; }
+    table { width:80%; margin:20px auto; border-collapse:collapse; }
+    th, td { border:1px solid #000; padding:10px; text-align:center; }
+    th { background:#ff1493; color:#fff; }
+    .delete { background:#dc143c; color:#fff; }
+    .delete:hover { background:#ff7f7f; color:#000; }
+  </style>
+</head>
+<body>
+  <h1>Manage Catalog</h1>
+
+  <!-- Add Catalog Item Form -->
+  <form onsubmit="addCatalogItem(name.value, type.value, category.value); return false;">
+    <input type="text" id="name" placeholder="Item Name" required />
+    <select id="type">
+      <option value="product">Product</option>
+      <option value="service">Service</option>
+    </select>
+    <input type="text" id="category" placeholder="Category (e.g. Nails, Hair, Tools)" required />
+    <button type="submit">Add to Catalog</button>
+  </form>
+
+  <!-- Catalog Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Category</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="catalog-list">
+      <!-- Rows populated dynamically -->
+    </tbody>
+  </table>
+
+  <script type="module" src="../scripts/catalog.js"></script>
+</body>
+</html>

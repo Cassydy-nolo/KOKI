@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Logo Management - KOKI Hair & Nails</title>
+  <style>
+    body { background:#fff; color:#000; font-family:Arial, sans-serif; }
+    h1 { color:#ff1493; text-align:center; }
+    .container { width:60%; margin:20px auto; text-align:center; }
+    input, button { margin:10px; padding:10px; }
+    button { background:#ff1493; color:#fff; border:none; cursor:pointer; border-radius:5px; }
+    button:hover { background:#ffc0cb; color:#000; }
+    img { max-width:200px; margin-top:20px; border:1px solid #000; }
+  </style>
+</head>
+<body>
+  <h1>Logo Management</h1>
+  <div class="container">
+    <form onsubmit="uploadLogo(fileInput.files[0]); return false;">
+      <input type="file" id="fileInput" accept="image/*" required />
+      <button type="submit">Upload Logo</button>
+    </form>
+    <div id="logo-preview"></div>
+  </div>
+  <script type="module" src="../scripts/logo.js"></script>
+</body>
+</html>
